@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src *  data: blob: filesystem: about: ws: wss: 'unsafe-inline' 'unsafe-eval' *.youtube.com *.googletagmanager.com *.facebook.com *.facebook.net;
+                                                        script-src * data: blob: 'self' http://xxxx 'unsafe-inline' 'unsafe-eval' *.google.com *.googletagmanager.com *.facebook.net; 
+                                                        connect-src * data: blob: 'unsafe-inline' *.googletagmanager.com; 
+                                                        img-src * data: blob: 'unsafe-inline'; 
+                                                        frame-src * data: blob: *.youtube.com *.google.com; 
+                                                        style-src * data: blob: 'unsafe-inline';
+                                                        font-src * data: blob: 'unsafe-inline';">
+
+    <title>Rodas | Postventa integrada y eficiente</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body class="flex flex-col center">  
+    <!-- HEADER -->
+    <section class="section dark flex flex-row flex-mobile-col center gap2 py2 pt0">
+      <div class="flex flex-col mobile-py mobile-gap">
+        <div class="flex flex-col flex-mobile-center p2 mobilep0">
+          <div class="flex flex-row">
+            <img id="logo" src="images/logo.svg" alt="">
+            <span id="rodas">RODAS</span>
+          </div>
+          <h1 class="text-mobile-center mobile-px2">POSTVENTA INTEGRADA Y EFICIENTE</h1>
+        </div>
+        <div class="content flex flex-col flex-1 px2 gap2 flex-mobile-center">
+          <div class="bullets content">
+            <span>· Interconexión total entre talleres y casas matrices en tiempo real.</span>
+            <span>· Uso masivo y simultáneo de cientos de usuarios, gestionando miles de productos de múltiples marcas y modelos a través de interfaces sencillas y amigables.</span>
+            <span>· Gestión de información técnica fundamental. 100% online, no requiere de instaladores ni servidores locales.</span>
+            <span>· Adaptabilidad a cada tipo de operación y producto, de manera modular y escalable.</span>
+            <span>· Coaching y capacitación estratégica para un negocio rentable y competitivo.</span>
+          </div>
+          <h2 class="text-center content">Contactanos para asesorarte</h1>
+        </div>
+      </div>
+      <div class="flex flex-col center">
+        <img class="mobile-py" id="hero" src="images/hero.png" alt="">
+        <!-- FORM -->
+        <div class="formContainer flex flex-col center">
+          <input id="name" placeholder="Nombre completo" class="m05" type="text" autofocus>
+          <input id="company" placeholder="Empresa" class="m05" type="text">
+          <input id="email" placeholder="Email" class="m05" type="text">
+          <textarea id="message" placeholder="Mensaje..." class="m05"></textarea>
+          <button onclick="sendEmail();gtag('event', 'click', {'event_category': 'contacto','event_label': 'formulario'  });" class="button color m">Enviar</button>
+          <span id="formMsg" class="hidden" style="color: white">Gracias por su mensaje, nos comunicaremos con ud brevemente</span>
+        </div>
+      </div>
+        
+    </section>
+    <!-- FEATURES -->
+    <section class="flex flex-row flex-wrap section selfstretch p2">
+        <div class="featureContainer flex flex-col flex-1">
+          <div class="featureTitle">
+            <img src="images/ico01.png" alt="Órdenes de Reparación y Altas de Historiales">
+            <span>Órdenes de Reparación y Altas de Historiales</span>
+          </div>
+          <p class="flex flex-col feature">
+            <span>• Confección de órdenes optimizada, de forma ágil y precisa.</span>
+            <span>• Acceso rápido a bases de datos e historiales de servicio.</span>
+            <span>• Impresiones en formato digital o físico.</span>
+            <span>• Creación directa de registros históricos para cada unidad atendida.</span>
+            <span>• Sistema de alertas y avisos configurable para unidades.</span>
+          </p>
+        </div>
+        <div class="featureContainer flex flex-col flex-1">
+          <div class="featureTitle">
+            <img src="images/ico02.png" alt="Garantías">
+            <span>Garantías</span>
+          </div>
+          <p class="flex flex-col feature">
+            <span>• Registro rápido y prolijo de la solicitud.</span>
+            <span>• Ingreso de la falla detectada y adjuntado preciso de evidencia.</span>
+            <span>• Intercambio en tiempo real con la Casa Matriz para validaciones y reintegros.</span>
+            <span>• Integración al proceso logístico.</span>
+          </p>
+        </div>
+        <div class="featureContainer flex flex-col flex-1">
+          <div class="featureTitle">
+            <img src="images/ico03.png" alt="Historiales de Servicios y Reparaciones">
+            <span>Historiales de Servicios y Reparaciones</span>
+          </div>
+          <p class="flex flex-col feature">
+            <span>• Accesos instantáneos a historiales individuales distribuidos forma estratégica.</span>
+            <span>• Información detallada sobre mantenimientos previos y reparaciones realizadas.</span>
+          </p>
+        </div>
+        <div class="featureContainer flex flex-col flex-1">
+          <div class="featureTitle">
+            <img src="images/ico04.png" alt="Gestión de Pedidos de Piezas">
+            <span>Gestión de Pedidos de Piezas</span>
+          </div>
+          <p class="flex flex-col feature">
+            <span>• Generación rápida y eficiente de pedidos online.</span>
+            <span>• Identificación rápida de piezas, accediendo a catálogos actualizados.</span>
+            <span>• Integración del proveedor de forma directa para agilizar tiempos de respuesta.</span>
+            <span>• Procesos de aprobación, documentación y seguimiento.</span>
+          </p>
+        </div>
+        <div class="featureContainer flex flex-col flex-1">
+          <div class="featureTitle">
+            <img src="images/ico05.png" alt="Soporte Técnico a Taller">
+            <span>Soporte Técnico a Taller</span>
+          </div>
+          <p class="flex flex-col feature">
+            <span>• Comunicación directa con expertos de la casa matriz a través de una plataforma estructurada.</span>
+            <span>• Opción de intercambio en vivo por medio de Realidad Aumentada.</span>
+            <span>• Vinculación directa a órdenes de reparación y reclamos de garantía.</span>
+            <span>• Configuración de grupos funcionales y síntomas.</span>
+          </p>
+        </div>
+        <div class="featureContainer flex flex-col flex-1">
+          <div class="featureTitle">
+            <img src="images/ico06.png" alt="Reportes y Business Intelligence">
+            <span>Reportes y Business Intelligence</span>
+          </div>
+          <p class="flex flex-col feature">
+            <span>• Generación, visualización y descarga de reportes e indicadores fundamentales</span>
+            <span>• Detallados y estructurados reportes vinculados a los servicios, reparaciones, retención, ventas, procesos logísticos y más.</span>
+            <span>• Integración de plataforma moderna de Business Intelligence.</span>
+          </p>
+        </div>
+        <div class="featureContainer flex flex-col flex-1">
+          <div class="featureTitle">
+            <img src="images/ico07.png" alt="Cronometraje, Productividad y Eficiencia">
+            <span>Cronometraje, Productividad y Eficiencia</span>
+          </div>
+          <p class="flex flex-col feature">
+            <span>• Medición de tiempos productivos, improductivos y demoras.</span>
+            <span>• Cálculo de indicadores de uso horarios en función de tiempos teóricos y horas compradas.</span>
+            <span>• Explotación de resultados cuantitativos y cualitativos.</span>
+          </p>
+        </div>
+        <div class="featureContainer flex flex-col flex-1">
+          <div class="featureTitle">
+            <img src="images/ico08.png" alt="Gestión de Bases de Datos">
+            <span>Gestión de Bases de Datos</span>
+          </div>
+          <p class="flex flex-col feature">
+            <span>• Bases de datos y catálogos estructurados y actualizados.</span>
+            <span>• Búsqueda rápida y precisa a través de filtros avanzados.</span>
+            <span>• Inserción ágil en los diferentes procesos.</span>
+          </p>
+        </div>
+        <div class="featureContainer flex flex-col flex-1">
+          <div class="featureTitle">
+            <img src="images/ico09.png" alt="Altas de Ventas">
+            <span>Altas de Ventas</span>
+          </div>
+          <p class="flex flex-col feature">
+            <span>• El ingreso completo de datos del cliente de unidades nuevas.</span>
+            <span>• Registro de productos vendidos explotable para el seguimiento personalizado de servicios o promociones.</span>
+          </p>
+        </div>
+        <div class="featureContainer flex flex-col flex-1">
+          <div class="featureTitle">
+            <img src="images/ico10.png" alt="Biblioteca de Documentos">
+            <span>Biblioteca de Documentos</span>
+          </div>
+          <p class="flex flex-col feature">
+            <span>• Biblioteca digitalizada de documentos parametrizable.</span>
+            <span>• Sistema optimizado de búsqueda, filtrado y acceso.</span>
+          </p>
+        </div>
+        <div class="featureContainer flex flex-col flex-1">
+          <div class="featureTitle">
+            <img src="images/ico11.png" alt="Interfaces con EMS, DMS y Sistemas de Facturación">
+            <span>Interfaces con EMS, DMS y Sistemas de Facturación</span>
+          </div>
+          <p class="flex flex-col feature">
+            <span>• Posible desarrollo de integraciones con sistemas de gestión y facturación, permitiendo una sincronización eficiente de datos y procesos.</span>
+          </p>
+        </div>
+        <div class="flex flex-col flex-1">
+        </div>
+      </div>
+    </section>
+    <!-- DOWNLOAD -->
+    <section class="flex flex-col section dark center gap2 p2">
+      <img src="images/flow.png">
+      <button class="downloadBtn">Descargar nuestra presentación</button>
+    </section>
+    <!-- CLIENTS -->
+    <section class="section flex flex-col flex-1 gap2 p2">
+      <h3 class="text-center">Cientos de usuarios ya utilizan RODASMR</h3>
+      <div class="clients">
+        <img src="images/client01.png" alt="">
+        <img src="images/client02.png" alt="">
+        <img src="images/client03.png" alt="">
+        <img src="images/client04.png" alt="">
+      </div>
+      <div class="flex flex-row center gap2 mobile-gap0">
+        <p class="card text-center">Más de 20 años de experiencia en la consultoría y digitalización de procesos.</p>
+        <p class="card text-center">Especialización en la industria de la movilidad con todo tipo de vehículos.</p>
+      </div>
+    </section>
+    <!-- APP -->
+    <section class="section dark flex flex-row flex-mobile-col mobilep0 pt2 flex-mobile-center mobile-gap">
+        <div class="flex flex-col mobile-py mobile-gap flex-mobile-center px2">
+          <div class="flex flex-col flex-mobile-center mobilep0">
+            <h1 class="text-mobile-center mobile-px2" style="font-size: 2rem;"><strong>CONECTIVIDAD AL ALCANCE</strong> PARA SUS CLIENTES FINALES</h1>
+          </div>
+          <div class="content flex flex-col flex-1 flex-mobile-center">
+            <h3 class="text-mobile-center mobile-px2">APP MOVIL</h3>
+            <div class="bullets text-mobile-center mobile-pb2" style="max-width: 100%;">
+              <span>· Consultar historiales de servicios.</span>
+              <span>· Conocer las políticas de garantía e intervalos de mantenimiento.</span>
+              <span>· Acceder a links útiles.</span>
+              <span>· Recibir avisos, novedades y promociones.</span>
+            </div>
+            <h3 class="text-mobile-center mobile-px2">TURNOS DE MANTENIMIENTO ONLINE</h3>
+            <div class="bullets text-mobile-center" style="max-width: 100%;">
+              <span>· Agenda integrada con el sistema y la programación de recursos.</span>
+              <span>· Habilitación selectiva de talleres.</span>
+            </div>
+          </div>
+        </div>
+        <img id="app" src="images/app.png" alt="">
+    </section>
+     <!-- BLOG -->
+    <section class="section blog selfstretch flex center flex-row flex-mobile-col px2 mobile-gap">
+      <!-- <img id="app" src="images/app.png" alt=""> -->
+        <div class="flex flex-1 flex-col mobile-py mobile-gap p2 flex-mobile-center end">
+          <h1 class="mobile-px2" style="font-size: 3rem;">Blog de la <strong>POSTVENTA</strong></h1>
+          <h3 class="mobile-px2">Contenido exclusivo de nuestros expertos</h3>
+          <a href="https://www.postventa.blog/" target="_blank">
+            <button class="downloadBtn red mt2">Visítenos en https://www.postventa.blog/</button>
+          </a>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <section class="footer selfstretch">
+      <span>Copyright © 2025. Todos los derechos reservados.</span>
+      <div class="flex flex-row center gap">
+        <a href="https://www.linkedin.com/company/rodas-sistemas" target="_blank" rel="noopener noreferrer">
+          <img src="images/sm_in.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/rodas.sistemas/" target="_blank" rel="noopener noreferrer">
+          <img src="images/sm_ig.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61551104369905" target="_blank" rel="noopener noreferrer">
+          <img src="images/sm_f.png" alt="Facebook">
+        </a>
+      </div>
+    </section>
+    <!-- <a href="https://wa.me/+5491135028511" target="_blank" onclick="gtag('event', 'click', {'event_category' : 'contacto','event_label' : 'whatsapp'});">
+      <button class="wa">
+        <svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill="white" d="M20.023,15.488c-0.63-0.015-1.423-0.052-1.924-0.14c-0.542-0.096-1.194-0.282-1.653-0.425 c-0.36-0.112-0.752-0.013-1.019,0.253L13.21,17.38c-1.532-0.807-2.759-1.747-3.798-2.792c-1.045-1.039-1.985-2.266-2.792-3.798 l2.204-2.218C9.09,8.305,9.189,7.913,9.077,7.553C8.935,7.095,8.748,6.443,8.653,5.901C8.564,5.4,8.528,4.607,8.512,3.977 C8.499,3.432,8.055,3,7.51,3H4C3.562,3,3,3.328,3,4c0,4.539,1.84,8.874,4.966,12.034C11.126,19.16,15.461,21,20,21 c0.672,0,1-0.562,1-1v-3.51C21,15.945,20.568,15.501,20.023,15.488z"></path>
+        </svg>
+      </button>
+    </a> -->
+  </body>
+
+  <script src="smtp.js"></script>
+  <script src="main.js"></script>
+
+</html>
