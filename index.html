@@ -19,7 +19,7 @@
   </head>
   <body class="flex flex-col center">  
     <!-- HEADER -->
-    <section class="section dark flex flex-row flex-mobile-col center gap2 py2 pt0">
+    <section class="section dark flex flex-row flex-mobile-col flex-mobile-center gap2 py2 pt0">
       <div class="flex flex-col mobile-py mobile-gap">
         <div class="flex flex-col flex-mobile-center p2 mobilep0">
           <div class="flex flex-row">
@@ -30,11 +30,26 @@
         </div>
         <div class="content flex flex-col flex-1 px2 gap2 flex-mobile-center">
           <div class="bullets content">
-            <span>· Interconexión total entre talleres y casas matrices en tiempo real.</span>
-            <span>· Uso masivo y simultáneo de cientos de usuarios, gestionando miles de productos de múltiples marcas y modelos a través de interfaces sencillas y amigables.</span>
-            <span>· Gestión de información técnica fundamental. 100% online, no requiere de instaladores ni servidores locales.</span>
-            <span>· Adaptabilidad a cada tipo de operación y producto, de manera modular y escalable.</span>
-            <span>· Coaching y capacitación estratégica para un negocio rentable y competitivo.</span>
+            <div class="flex gap05">
+              <span class="material-symbols-outlined">check</span>
+              <span>Interconexión total entre talleres y casas matrices en tiempo real.</span>
+            </div>
+            <div class="flex gap05">
+              <span class="material-symbols-outlined">check</span>
+              <span>Uso masivo y simultáneo de cientos de usuarios, gestionando miles de productos de múltiples marcas y modelos a través de interfaces sencillas y amigables.</span>
+            </div>
+            <div class="flex gap05">
+              <span class="material-symbols-outlined">check</span>
+              <span>Gestión de información técnica fundamental. 100% online, no requiere de instaladores ni servidores locales.</span>
+            </div>
+            <div class="flex gap05">
+              <span class="material-symbols-outlined">check</span>
+              <span>Adaptabilidad a cada tipo de operación y producto, de manera modular y escalable.</span>
+            </div>
+            <div class="flex gap05">
+              <span class="material-symbols-outlined">check</span>
+              <span>Coaching y capacitación estratégica para un negocio rentable y competitivo.</span>
+            </div>
           </div>
           <h2 class="text-center content">Contactanos para asesorarte</h1>
         </div>
@@ -54,6 +69,10 @@
         
     </section>
     <!-- FEATURES -->
+     <section class="section flex flex-col center p2">
+        <img src="images/flow_w.jpg" style="width:70%">
+        <button class="downloadBtn">Descargar nuestra presentación</button>
+     </section>
     <section class="flex flex-row flex-wrap section selfstretch p2">
         <div class="featureContainer flex flex-col flex-1">
           <div class="featureTitle">
@@ -181,13 +200,71 @@
       </div>
     </section>
     <!-- DOWNLOAD -->
-    <section class="flex flex-col section dark center gap2 p2">
+    <!-- <section class="flex flex-col section dark center gap2 p2">
       <img src="images/flow.png" style="width:70%">
       <button class="downloadBtn">Descargar nuestra presentación</button>
+    </section> -->
+    <!-- APP -->
+    <section class="section dark flex flex-row flex-mobile-col mobilep0 p2 flex-mobile-center mobile-gap">
+      <div class="imgContainer">
+        <img id="app" src="images/app2.png" alt="">
+      </div>
+      <div class="flex flex-col mobile-py mobile-gap flex-mobile-center px2">
+          <div class="flex flex-col flex-mobile-center mobilep0">
+            <h1 class="text-mobile-center mobile-px2" style="font-size: 2rem;"><strong>CONECTIVIDAD AL ALCANCE</strong> PARA SUS CLIENTES FINALES</h1>
+          </div>
+          <div class="content flex flex-col flex-1 flex-mobile-center">
+            <h3 class="text-mobile-center mobile-px2">APP MOVIL</h3>
+            <div class="bullets text-mobile-center mobile-pb2" style="max-width: 100%;">
+              <div class="flex gap05">
+                <span class="material-symbols-outlined">check</span>
+                <span>Consultar historiales de servicios.</span>
+              </div>
+              <div class="flex gap05">
+                <span class="material-symbols-outlined">check</span>
+                <span>Conocer las políticas de garantía e intervalos de mantenimiento.</span>
+              </div>
+              <div class="flex gap05">
+                <span class="material-symbols-outlined">check</span>
+                <span>Acceder a links útiles.</span>
+              </div>
+              <div class="flex gap05">
+                <span class="material-symbols-outlined">check</span>
+                <span>Recibir avisos, novedades y promociones.</span>
+              </div>
+            </div>
+            <h3 class="text-mobile-center mobile-px2">TURNOS DE MANTENIMIENTO ONLINE</h3>
+            <div class="bullets text-mobile-center" style="max-width: 100%;">
+              <div class="flex gap05">
+                <span class="material-symbols-outlined">check</span>
+                <span>Agenda integrada con el sistema y la programación de recursos.</span>
+              </div>
+                <div class="flex gap05">
+                <span class="material-symbols-outlined">check</span>
+                <span>Habilitación selectiva de talleres.</span>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+    </section>
+     <!-- BLOG -->
+    <section class="section selfstretch flex center flex-row flex-mobile-col p2 mobile-gap">
+      
+      <div class="flex flex-1 flex-col center text-center mobile-py mobile-gap p2">
+        <h1 class="mobile-px2" style="font-size: 3rem;">Blog de la <strong>POSTVENTA</strong></h1>
+        <h3 class="mobile-px2">Contenido exclusivo de nuestros expertos</h3>
+        <a href="https://www.postventa.blog/" target="_blank">
+          <button class="downloadBtn red">Visítenos</button>
+        </a>
+      </div>
+      <div class="imgContainer">
+        <img iclass="blog" src="images/blog2.png" alt="">
+      </div>
     </section>
     <!-- CLIENTS -->
     <section class="section flex flex-col flex-1 gap2 p2">
-      <h3 class="text-center">Cientos de usuarios ya utilizan RODASMR</h3>
+      <h3 class="text-center">Cientos de usuarios ya utilizan RODAS<sup style="font-size: .75rem;">MR</sup></h3>
       <div class="clients">
         <img src="images/client01.png" alt="">
         <img src="images/client02.png" alt="">
@@ -198,40 +275,6 @@
         <p class="card text-center">Más de 20 años de experiencia en la consultoría y digitalización de procesos.</p>
         <p class="card text-center">Especialización en la industria de la movilidad con todo tipo de vehículos.</p>
       </div>
-    </section>
-    <!-- APP -->
-    <section class="section dark flex flex-row flex-mobile-col mobilep0 pt2 flex-mobile-center mobile-gap">
-        <div class="flex flex-col mobile-py mobile-gap flex-mobile-center px2">
-          <div class="flex flex-col flex-mobile-center mobilep0">
-            <h1 class="text-mobile-center mobile-px2" style="font-size: 2rem;"><strong>CONECTIVIDAD AL ALCANCE</strong> PARA SUS CLIENTES FINALES</h1>
-          </div>
-          <div class="content flex flex-col flex-1 flex-mobile-center">
-            <h3 class="text-mobile-center mobile-px2">APP MOVIL</h3>
-            <div class="bullets text-mobile-center mobile-pb2" style="max-width: 100%;">
-              <span>· Consultar historiales de servicios.</span>
-              <span>· Conocer las políticas de garantía e intervalos de mantenimiento.</span>
-              <span>· Acceder a links útiles.</span>
-              <span>· Recibir avisos, novedades y promociones.</span>
-            </div>
-            <h3 class="text-mobile-center mobile-px2">TURNOS DE MANTENIMIENTO ONLINE</h3>
-            <div class="bullets text-mobile-center" style="max-width: 100%;">
-              <span>· Agenda integrada con el sistema y la programación de recursos.</span>
-              <span>· Habilitación selectiva de talleres.</span>
-            </div>
-          </div>
-        </div>
-        <img id="app" src="images/app.png" alt="">
-    </section>
-     <!-- BLOG -->
-    <section class="section blog selfstretch flex center flex-row flex-mobile-col px2 mobile-gap">
-      <!-- <img id="app" src="images/app.png" alt=""> -->
-        <div class="flex flex-1 flex-col mobile-py mobile-gap p2 flex-mobile-center end">
-          <h1 class="mobile-px2" style="font-size: 3rem;">Blog de la <strong>POSTVENTA</strong></h1>
-          <h3 class="mobile-px2">Contenido exclusivo de nuestros expertos</h3>
-          <a href="https://www.postventa.blog/" target="_blank">
-            <button class="downloadBtn red mt2">Visítenos en https://www.postventa.blog/</button>
-          </a>
-        </div>
     </section>
     <!-- FOOTER -->
     <section class="footer selfstretch">
@@ -248,13 +291,6 @@
         </a>
       </div>
     </section>
-    <!-- <a href="https://wa.me/+5491135028511" target="_blank" onclick="gtag('event', 'click', {'event_category' : 'contacto','event_label' : 'whatsapp'});">
-      <button class="wa">
-        <svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path fill="white" d="M20.023,15.488c-0.63-0.015-1.423-0.052-1.924-0.14c-0.542-0.096-1.194-0.282-1.653-0.425 c-0.36-0.112-0.752-0.013-1.019,0.253L13.21,17.38c-1.532-0.807-2.759-1.747-3.798-2.792c-1.045-1.039-1.985-2.266-2.792-3.798 l2.204-2.218C9.09,8.305,9.189,7.913,9.077,7.553C8.935,7.095,8.748,6.443,8.653,5.901C8.564,5.4,8.528,4.607,8.512,3.977 C8.499,3.432,8.055,3,7.51,3H4C3.562,3,3,3.328,3,4c0,4.539,1.84,8.874,4.966,12.034C11.126,19.16,15.461,21,20,21 c0.672,0,1-0.562,1-1v-3.51C21,15.945,20.568,15.501,20.023,15.488z"></path>
-        </svg>
-      </button>
-    </a> -->
   </body>
 
   <script src="smtp.js"></script>

@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
 @font-face {
   font-family: Dalek;
   src: url(Dalek.ttf);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 :root {
@@ -134,11 +143,11 @@ html {
   color: var(--lightText);
 }
 
+#hero {
+  width: 400px;
+}
 
 .blog {
-  background-image: url('images/blog.png');
-  background-position: center;
-  background-size: cover;
   color: white
 }
 
@@ -148,6 +157,7 @@ html {
 .imgContainer img {
   width: 100%;
   height: auto;
+  border-radius: 1rem;
 }
 .iconContainer {
   width: 5rem;
@@ -235,6 +245,8 @@ a:hover span{
   display: flex;
   flex-direction: column;
   text-align: justify;
+  gap: 0.5rem;
+  max-width: 55ch;
 }
 
 .bullets span {
@@ -350,6 +362,9 @@ a:hover span{
   gap: 1rem;
 }
 
+.gap05 {
+  gap: 0.5rem;
+}
 .gap {
   gap: 1rem;
 }
