@@ -89,8 +89,14 @@ html {
 .m {
   margin: 1rem;
 }
+.mt {
+  margin-top: 1rem;
+}
 .mt2 {
   margin-top: 2rem;
+}
+.mt5 {
+  margin-top: 5rem;
 }
 .mb2 {
   margin-bottom: 2rem;
@@ -193,7 +199,7 @@ h1{
   font-weight: 200;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0.5rem 0;
 }
 h3 {
@@ -251,7 +257,7 @@ a:hover span{
 
 .bullets span {
   line-height: 1.5;
-  font-size: .9rem;
+  font-size: 1.1rem;
 }
 
 .downloadBtn {
@@ -312,10 +318,14 @@ a:hover span{
 }
 .pt0 {
   padding-top: 0 !important;
+}
+.pt5 {
+  padding-top: 5rem;
+}
 .px0 {
   padding-left: 0 !important;
   padding-right: 0 !important;
-}}
+}
 
 .pt2 {
   padding-top: 2rem;
@@ -360,6 +370,12 @@ a:hover span{
   align-items: center;
   justify-content: space-around;
   gap: 1rem;
+  margin: 2rem 0;
+}
+
+.clients img {
+  max-width: 200px;
+  height: auto;
 }
 
 .gap05 {
@@ -455,15 +471,19 @@ input:focus , textarea:focus{
 }
 
 #logo {
-  height:75px;
-  width:75px;
+  height:100px;
+  width:100px;
 }
 #rodas {
   font-family: 'Dalek', sans-serif;
   font-weight: 600;
-  font-size: 4.55rem;
+  font-size: 6.2rem;
   color: var(--lightText);
   margin-left: 0.5rem;
+}
+
+.dalek {
+  font-family: 'Dalek', sans-serif;
 }
 
 .video {
@@ -553,5 +573,8 @@ input:focus , textarea:focus{
   }
   .card {
     margin: 0 1rem;
+  }
+  .bullets span {
+    font-size: .9rem;
   }
 }
